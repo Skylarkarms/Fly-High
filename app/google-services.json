@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "441877937564",
+    "firebase_url": "https://fly-high-a554b.firebaseio.com",
+    "project_id": "fly-high-a554b",
+    "storage_bucket": "fly-high-a554b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441877937564:android:dff91759ba2d0eccc89c59",
+        "android_client_info": {
+          "package_name": "com.example.flyhigh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441877937564-3a5jpmklh84jl8bfvinhcqk7bjk4lc8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN9pFDPVTaB7zEmqXyPNInq0TtJSg56Pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441877937564-3a5jpmklh84jl8bfvinhcqk7bjk4lc8r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

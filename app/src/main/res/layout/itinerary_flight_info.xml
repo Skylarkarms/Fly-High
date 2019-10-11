@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+        <data>
+                <variable
+                    name="flightInfo"
+                    type="com.example.flyhigh.data.ItineraryFlightInfo"/>
+
+        </data>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+
+
+            >
+
+                <!-- TODO: Update blank fragment layout -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="8dp"
+
+                    tools:context="com.example.flyhigh.ui.MainActivity"
+                    android:background="@color/colorPrimaryDark"
+
+                    >
+
+
+                        <FrameLayout
+                            android:id="@+id/fecha_Frame"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="8dp"
+
+                            app:layout_constraintBottom_toTopOf="@+id/guideline7"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="@+id/guideline17"
+                            app:layout_constraintTop_toTopOf="@+id/guideline6">
+
+                                <TextView
+                                    android:id="@+id/_fechaTV"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:gravity="center"
+
+                                    android:text="@{flightInfo._fecha}"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/white"
+                                    app:autoSizeTextType="uniform" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/numeroDeVueloFrame"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="8dp"
+
+                            app:layout_constraintBottom_toTopOf="@+id/guideline14"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+                            app:layout_constraintStart_toStartOf="@+id/guideline17"
+                            app:layout_constraintTop_toTopOf="@+id/guideline10">
+
+                                <TextView
+                                    android:id="@+id/numeroDeVueloTV"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:gravity="center"
+
+                                    android:text="@{flightInfo._numeroDeVuelo}"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/white"
+                                    app:autoSizeTextType="uniform" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/_companiaFrame"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="8dp"
+
+                            app:layout_constraintBottom_toTopOf="@+id/guideline10"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                            app:layout_constraintStart_toStartOf="@+id/guideline9"
+                            app:layout_constraintTop_toTopOf="@+id/guideline8">
+
+                                <TextView
+                                    android:id="@+id/_companiaTV"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:gravity="center"
+
+                                    android:text="@{flightInfo._compania}"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/white"
+                                    app:autoSizeTextType="uniform" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/_timeFrameDots"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="25dp"
+
+                            app:layout_constraintBottom_toTopOf="@+id/guideline14"
+                            app:layout_constraintEnd_toStartOf="@+id/_timeFrameMinutes"
+                            app:layout_constraintStart_toStartOf="@+id/guideline15"
+                            app:layout_constraintTop_toTopOf="@+id/guideline8">
+
+                                <TextView
+                                    android:id="@+id/_timeTVDots"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:gravity="center"
+
+                                    android:text=":"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/white"
+                                    app:autoSizeTextType="uniform" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/_timeFrameMinutes"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+
+
+                            app:layout_constraintBottom_toTopOf="@+id/guideline14"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                            app:layout_constraintStart_toStartOf="@+id/guideline13"
+                            app:layout_constraintTop_toTopOf="@+id/guideline8">
+
+                                <TextView
+                                    android:id="@+id/_timeTVMinutes"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:gravity="center"
+
+                                    intMinutes="@{flightInfo._time}"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/white"
+                                    app:autoSizeTextType="uniform"
+
+                                    android:maxLines="1"
+                                    />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/_timeFrameHours"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+
+
+                            app:layout_constraintBottom_toTopOf="@+id/guideline14"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toTopOf="@+id/guideline8">
+
+                                <TextView
+                                    android:id="@+id/_timeTVHours"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:gravity="center"
+
+                                    intHours="@{flightInfo._time}"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/white"
+                                    app:autoSizeTextType="uniform"
+
+                                    android:maxLines="1"
+                                    />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/aeropuertoFrame"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="8dp"
+
+                            app:layout_constraintBottom_toTopOf="@+id/guideline8"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="@+id/guideline9"
+                            app:layout_constraintTop_toTopOf="@+id/guideline7">
+
+                                <TextView
+                                    android:id="@+id/aeropuerto"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:gravity="center"
+
+                                    android:text="@{flightInfo._aeropuerto}"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/white"
+                                    app:autoSizeTextType="uniform" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/planeFrame"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="8dp"
+
+                            app:layout_constraintBottom_toTopOf="@+id/guideline8"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                            app:layout_constraintStart_toStartOf="@+id/guideline4"
+                            app:layout_constraintTop_toTopOf="@+id/guideline6">
+
+                                <ImageView
+                                    android:id="@+id/airplaneImage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/airplane"
+
+                                    />
+                        </FrameLayout>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.11" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintGuide_begin="4dp" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.96455693" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.5924051" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintGuide_begin="241dp" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.015189873" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.41" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.51" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.79" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.75" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintGuide_begin="70dp" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintGuide_begin="121dp" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintGuide_begin="180dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </FrameLayout>
+
+
+
+</layout>
